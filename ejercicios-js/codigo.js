@@ -1,44 +1,51 @@
-let nombre = prompt('Push your name, please!');
-alert("Hello "+nombre);
+//1
+let name = prompt('Push your name, please!');
+alert("Hello "+name);
 
-let numero = 25;
-numero%=15;
-document.write(numero);
+let number = 25;
+number%=15;
+document.write(number);
 
-numero1 = 10;
-numero2 = 5;
+//2
+number1 = 10;
+number2 = 5;
 
-resultado = numero1**numero2;
+result = number1**number2;
 
-alert(resultado);
-//resultado = numero1;
+alert(result);
+//result = number1;
 
-saludo = "Hola Franco";
-pregunta = "¿Como estas?";
+//3
+greeting = "Hello Frank";
+question = "How are you?";
 
-frase = saludo.concat(" "+pregunta);
-document.write(frase);
+sentence = greeting.concat(" "+question);
+document.write(sentence);
 
-let numero1 = 23;
-let numero2 = "23";
+//4
+let number1 = 23;
+let number2 = "23";
 
 document.write(numero1 !== numero2);
 
-let valor1 = true;
-let valor2 = false;
+//5
+let value1 = true;
+let value2 = false;
 
-let resultado1 = valor1 || valor2;
+let result1 = value1 || value2;
 
-document.write(resultado1);
+document.write(result1);
 
+//6
 num1 = 24;
 num2 = 12;
 
-afirmacion1 = num1 < num2;
-afirmacion2 = num1 == num2;
+affirmation1 = num1 < num2;
+affirmation2 = num1 == num2;
 
-document.write(!afirmacion1 && !afirmacion2);
+document.write(!affirmation1 && !affirmation2);
 
+//7
 num1 = 24;
 num2 = 12;
 
