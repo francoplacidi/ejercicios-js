@@ -1,71 +1,75 @@
-dineroC = prompt('¿Cuanto dinero tienes cofla?');
-dineroR = prompt('¿Cuanto dinero tienes roberto?');
-dineroP = prompt('¿Cuanto dinero tienes pedro?');
+//1
+moneyC = prompt('How much money do you have Cofla?');
 
-if(dineroC >= 0.6 && dineroC < 1){
-    alert('Comprate el helado de agua');
+if(moneyC >= 0.6 && moneyC < 1){
+    alert('Buy a water ice cream');
 }
-else if(dineroC >= 1 && dineroC < 1.6){
-    alert('Comprate el helado de crema');
+else if(moneyC >= 1 && moneyC < 1.6){
+    alert('Buy a cream ice cream');
 }
-else if(dineroC >= 1.6 && dineroC < 1.7){
-    alert('Comprate el helado de bombom');
+else if(moneyC >= 1.6 && moneyC < 1.7){
+    alert('Buy a chocolate ice cream');
 }
-else if(dineroC >= 1.7 && dineroC < 1.8){
-    alert('Comprate el helado de tuca');
+else if(moneyC >= 1.7 && moneyC < 1.8){
+    alert('Buy a raspberry ice cream');
 }
-else if(dineroC >= 1.8 && dineroC < 2.9){
-    alert('Comprate el helado de maracuya');
+else if(moneyC >= 1.8 && moneyC < 2.9){
+    alert('Buy a passion fruit ice cream');
 }
 else if(dineroC >= 2.9){
-    alert('Careta');
+    alert('How much money!');
 }
 else{
-    alert('Lo siento, pobre de mierda');
+    alert('I`m sorry, you can`t afford any ice cream');
 }
 
-//Arrays asociativos
+
+//2-Array associative
 
 let pc = {
-    nombre: "Dalto Pc",
-    apellido: "Rama"
+    name: "Dalto Pc",
+    surname: "Rama"
 };
 
-let nombre = pc["nombre"];
-let apellido = pc["apellido"];
+let name = pc["name"];
+let surname = pc["surname"];
 
-frase = `
-    El nombre de mi pc es: <b>${nombre}</b><br>
-    El apellido: <b>${apellido}</b>
+sentence = `
+    The name of my pc is: <b>${name}</b><br>
+    The surname: <b>${surname}</b>
 `;
 
-document.write(frase);
+document.write(sentence);
 
-numero = 0;
+//3
+number = 0;
 
-while(numero <= 6){
-    numero++;
-    document.write(numero + "<br>");
+while(number <= 6){
+    number++;
+    document.write(number + "<br>");
 }
 
-let numero = 0;
+//4
+let number = 0;
 
 do{
-    document.write(numero + "<br>"); 
-    numero++;
-}while(numero > 6);
+    document.write(number + "<br>"); 
+    number++;
+}while(number > 6);
 
-let numero = 0;
+//5
+let number = 0;
 
-while(numero < 1000){
-    numero++;
-    document.write("Numero " + numero + " <br>");
-    if(numero == 10){
+while(number < 1000){
+    number++;
+    document.write("Number " + number + " <br>");
+    if(number == 10){
         break; 
     }
 }
-document.write("fin");
+document.write("end");
 
+//6
 for(let i = 1; i <= 5; i++){
     if(i == 3){
         continue;
@@ -73,19 +77,21 @@ for(let i = 1; i <= 5; i++){
     document.write(i + " <br> ");
 }
 
-let animales = ["gato", "perro", "dinosaurio"];
+//7
+let animals = ["cat", "dog", "dinosaur"];
 
-for(animal in animales){
+for(animal in animals){
     document.write(animal + "<br>");
 }
 
 document.write("<br>");
 
-for(animal of animales){
+for(animal of animals){
     document.write(animal + "<br>");
 }
 
-array1 = ["maria", "josefa", "roberta"];
-array2 = ["pedro", "marcelo", array1, "jaun"];
+//8
+array1 = ["MaRY", "Josephine", "Roberta"];
+array2 = ["Pedro", "Peter", array1, "John"];
 
 for(let array in array2){}
